@@ -49,7 +49,7 @@ void fisher_yates( std::vector< T >& v, size_t count = 0)
 	// fisher yates 
 	for( size_t i=0; i<v.size()-1 && count!=0; ++i ) {
 		size_t to = equalikely(i,v.size()-1);
-		swap( v[i], v[to] );
+		std::swap( v[i], v[to] );
 		--count;
 	}
 }
